@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/phaser/phaser.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body style="width:100vw;height:100vh;padding:0;margin:0;overflow:hidden;position:relative;">
+
+        <div id="gamestage"></div>
+        
+        <script>
+        
+            window.onload = function(){
+                
+                // CREATE GAME INSTANCE
+                var game = new Phaser.Game(
+                    '100%', // <--- HEIGHT
+                    '100%', // <--- WIDTH
+                    Phaser.AUTO, // <--- REDEREING ENGINE CHOICE
+                    'gamestage', // <--- ELEMENT THAT LOUADS THE GAME (ID)
+                );
+            }
+        
+        </script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
